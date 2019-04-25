@@ -1,0 +1,172 @@
+/*
+Pacific css file - Chapter 12
+Programmer Rufino Salgado
+April 18, 2017
+*/
+
+/*Creates id selector Contact*/
+#gallery{position: relative; height:200px; text-align:left; }
+#gallery ul{width:300px; list-style-type: none;}
+#gallery li {display:inline; float:left; padding:10px;}
+#gallery img{border-style:none;}
+#gallery a{text-decoration: none;
+             font-style: italic;  
+             color: #000000; }
+#gallery span { position: absolute;
+                left: -1000px;
+               opacity: 0;
+              transition:  opacity 3s ease-in-out; 
+}
+#gallery a:hover span {     
+			position: absolute;
+			top: 16px;
+			left: 320px; 
+			text-align: center; 
+            opacity: 1; 
+}
+#contact {color: #333333; 
+		font-size: 90%;
+		margin-left: 20px;}
+#wrapper {
+	width: 80%;
+	background-color: #90C7E3;
+	min-width: 960px;
+	max-width: 2048px;
+	box-shadow: 3px 3px 3px 3px #333333;
+	margin-left: auto;
+	margin-right: auto;
+	}
+#homehero{
+	height: 300px; 
+    margin-left: 190px;
+	background-image: url(images/coasthero.jpg);
+	background-size: 100% 100%;
+
+	}
+#yurthero{
+	height:300px;
+    margin-left: 190px;
+	background-image: url(images/yurthero.jpg);
+	background-size: 100% 100%;}
+#trailhero{
+	height: 300px;
+    margin-left: 190px;
+	background-image: url(images/trailhero.jpg);
+	background-size: 100% 100%;
+
+}
+
+/*Creates Resort class for use with Span tags*/
+.resort {color: #5C7FA3;  font-weight: bold;}
+.text{text-align: center;}
+.altrow {background-color: #F5FAFC;}
+
+a:link{color: #000003;}
+a:visited{color: #344873;}
+a:hover{color: #FFFFFF;}
+body {font-family: Arial, Helvetica, san-serif; 
+	background-color: #4F6D93; 
+	color: #000000;
+	background: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+	background-repeat: no-repeat;}
+dt {color: #000033;}
+figure{position: absolute;
+			left: 280px; 
+			text-align: center; 
+            opacity: .25;}
+footer{	float: none;
+		font-size: 75%; 
+		font-style: italic;
+		text-align: center;
+		font-family: Georgia, "Times New Roman", serif;
+		padding: 20px; 
+		margin-left: 190px; 
+		background-color: #FFFFFF;}
+
+h1{margin-top: 0; 
+	margin-bottom: 0;
+	font-family: Georgia, "Times New Roman", serif;}
+h2 {color: #3399CC; 
+	font-family: Georgia, "Times New Roman", serif;}
+h3{font-family: Georgia, "Times New Roman", serif;}
+header {background-color: #000033; color: #FFFFFF;
+		background-image: url(images/sunset.jpg); /*inserts background image */
+		background-position: right; 
+		background-repeat: no-repeat;
+		height: 60px; 
+		text-align: center;
+		padding-top: 15px;}
+input, textarea{display:block;
+	margin-bottom:20px;}
+input[type=submit]{margin-left:130px;}
+label {float:left; 
+	display:block; 
+	text-align:right; 
+	width: 120px;
+	padding-right: 10px;}
+main{padding-top: 1px;	
+	padding-right: 20px;
+	padding-left: 30px;	
+	padding-bottom: 20px;
+	display: block;    
+	background-color: white;
+    margin-left: 190px;}
+main ul{list-style-image: url(images/marker.gif);}
+nav	{float: left;
+    width: 160px;
+    padding: 20px;
+	font-weight: bold;}
+nav a { text-decoration: none;transition: color 3s ease-out;} /*Removes underline decorations*/
+nav ul{list-style: none; 
+	margin: 0px; 
+	padding-left: 0px; 
+    font-size: 1.2em;}
+
+table{border: 1px solid; 
+	border-color: #3399CC; 
+	width: 80%; 
+    border-spacing: 0;}
+th{padding: 5px ; 
+	border: 1px solid; 
+    border-color: #3399CC;}
+td{text-align: center;
+	padding: 5px ; 
+	border: 1px solid; 
+    border-color: #3399CC;}
+video, embed{float:right; padding-left: 20px;}
+
+
+/*Configurations for mobile and tablets*/
+header, main, nav, footer, figure, figcaption, aside, section, article{display: block;}
+
+#mobile {display: none;}
+#desktop{display: inline;}
+@media only screen and (max-width: 64em){
+    body{margin:0; background-color: #FFFFFF;}
+    #wrapper{min-width: 0; width: auto; box-shadow: none;}
+    main{margin: 0;}
+    nav{float: none; width: auto; text-align: center; padding: 0.5em;}
+    nav li{display: inline; padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.75em; padding-right: 0.75em;}
+    footer{margin-left: 0;}
+    #homehero{margin-left: 0; height: 200px;}
+    #yurthero{margin-left: 0; height: 200px;}
+    #trailhero{margin-left: 0; height: 200px;}}
+
+@media only screen and (max-width: 37.5em){
+    header{padding-top: 1em;}
+    main{padding-bottom: 0.1em; padding-top: 0.1em; padding-left: 1em; padding-right: 1em; font-size: 90%;}
+    h1{font-size: 1.5em;}
+    nav{padding: 0;}
+    nav li{display: block; margin: 0; border-bottom: 2px; border-bottom-color: #330000;}
+    nav a{display: block;}
+    #homehero{display: none; background-image: none; height: 0;}
+    #yurthero{display: none; background-image: none; height: 0;}
+    #trailhero{display: none; background-image: none; height: 0;}
+    #mobile{display: inline;}
+    #desktop{display: none;}
+    #gallery{display:none;}
+	/*Form configuration*/
+	label{float: none; text-align: left;}
+	input[type=submit]{margin-left:0;}
+}
+
