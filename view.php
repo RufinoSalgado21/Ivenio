@@ -22,8 +22,8 @@
 					<li><a href="insert.php">Contribute</a></li>
 					<li class="sublist">
 						<a href="insert.php">Insert</a></li>
-					<li class="sublist">
-						<a href="delete.php">Remove</a></li>
+				<!--	<li class="sublist">
+						<a href="delete.php">Remove</a></li>-->
 					<li class="sublist">
 						<a href="view.php">View</a></li>
 					<li><a href="careers.php">Discover</a></li>    
