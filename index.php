@@ -1,7 +1,10 @@
 <!--[if 1t IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
+
 <![endif]-->
+<!--Rufino Salgado
+	CS 415 Design of Data Base System-->
 <!-DOCTYPE html>
 <html lang="en">
 	<head><title>Invenio</title>

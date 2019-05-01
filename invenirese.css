@@ -1,3 +1,5 @@
+/*Rufino Salgado
+	CS 415 Design of Data Base System*/
 /*Contains page elements in a floating box over the background*/
 #wrapper {
 	width: 80%;
@@ -19,6 +21,12 @@
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 4px;
+	margin-left: 2.5em;
+	}
+
+.submitBtn{float:left; 
+	margin-left: 1em; 
+	margin-top:2em;
 	}
 
 #updateBtn{
@@ -30,6 +38,7 @@
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 4px;
+	margin-left: 2.5em;
 	}
 
 #myBtn {
@@ -52,6 +61,12 @@
 .sublist{font-weight: normal;
 	padding-left: 1em;
 	}
+	
+.submitBtn{float:left; 
+	margin-left: 1em; 
+	margin-top:1.4em;
+	}
+
 header, nav, main{display: block; border-radius: 4px;}
 	
 a:link{color: #000033;}
@@ -61,7 +76,7 @@ h1{ margin-top: 0;
 	margin-bottom: 0;
 	font-family: Bookman Old Style, "Times New Roman", serif;
 	}
-h4{padding-left:40px;
+h4, h5{padding-left:40px;
 	padding-right: 40px;
 }
 body{font-family: Arial, Helvetica, san-serif;
@@ -78,6 +93,9 @@ header{background-color: #000033;
 	padding-top: 15px;
 	}
 	
+input, label{ display: block;}
+	
+select{width: 10em;}
 nav{float: left;
 	width:200px;
 	padding: 20px;
@@ -98,11 +116,26 @@ nav ul{list-style: none;
 main{padding-top: 1px;
 	padding-right: 20px;
 	padding-left: 30px;
+	padding-bottom:5em;
 	margin-bottom:0px;
 	background-color: white;
 	margin-left:170px;
-	height:100%;
+	overflow:auto;
 	}
+
+table{display:table;
+	table-layout:fixed;
+	}
+th{padding:10px;
+	border-collapse: collapse;
+	background-color: #000033;
+	color: white;}
+table, td {
+	padding: 10px;
+    border: 1px solid #ddd;
+	border-collapse:collapse;
+}
+	
 	
 #mobile {display: none;}
 #desktop{display: inline;}

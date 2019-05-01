@@ -1,3 +1,5 @@
+//Rufino Salgado
+//CS 415 Design of Data Base Systems
 		window.onscroll = function() {scrollFunction();}
 		function scrollFunction() {
 				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
